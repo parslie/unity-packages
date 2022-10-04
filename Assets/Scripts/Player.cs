@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
         velocity.x = jogSpeed * moveInput.x;
         velocity.z = jogSpeed * moveInput.z;
 
-        if (controller.IsGrounded || controller.IsCeilinged)
+        if (controller.IsGrounded || controller.IsCeiled)
             velocity.y = 0;
         velocity.y -= gravity * Time.deltaTime;
 
